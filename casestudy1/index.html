@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Javascript</title>
+      <!--start of style-->
+      <style>
+      input[type=text]{
+        width:10%;
+        padding: 5px 5px;
+        margin: 5px 0;
+        }
+     </style>
+     <!--end of style-->
+  </head>
+  <body>
+    <!--start of form-->
+    <form>
+       <div class="login">
+         <h1><center>Login Form</h1></center>
+           <p>
+            <center> <div id="msg">
+            </div></center>
+            <center><label>Username:<input type="text" name="username" id="username" placeholder="Username" onkeyup="myFunction()"/></label></center><br>
+          </p>
+    </form>
+    <!--end of form-->
+    <script>
+          function myFunction() {
+          var x = document.getElementById("username").value.toUpperCase();
+          document.getElementById("msg").innerHTML = x;
+          }
+    </script>
+  </body>
+</html>
